@@ -29,6 +29,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0; /* Reset default margin */
+  color: #f1f1f1;
 }
 
 .content-container {
