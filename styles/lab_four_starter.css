@@ -1,7 +1,3 @@
-.open-source-icon {
-  background-image: url("path/to/open-source-icon.svg");
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500&display=swap");
 * {
   font-family: "Solway", serif;
