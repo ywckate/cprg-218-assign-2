@@ -114,7 +114,7 @@
   width: 100%;
   height: 100%;
   border: none; /* Remove iframe border */
-
+}
 
 form {
   width: 300px;
@@ -123,6 +123,7 @@ form {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 legend {
   color: black;
   display: block;
