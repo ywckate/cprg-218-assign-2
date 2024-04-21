@@ -7,11 +7,14 @@
     <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="./styles/fonts.css" />
     <link rel="stylesheet" type="text/css" href="./styles/global.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/lab_four_starter.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./styles/lab_four_starter.css"
+    />
     <title>Common Website Features</title>
   </head>
   <body>
-    
     <section class="hero-container">
       <!-- Remove and add hero banner HTML -->
       <div class="Kate's Portfolio">
@@ -26,7 +29,12 @@
     <section class="container content-container">
       <!-- Remove and add content HTML -->
       <div class="about-me">
-        <img src="./assets/headshot.jpg" alt="portfoliopic" width="200" height="300" />
+        <img
+          src="./assets/headshot.jpg"
+          alt="portfoliopic"
+          width="200"
+          height="300"
+        />
         <h1>About me</h1>
         <p>
           Hello! I am Kate, I am a 21 years old New Media Production and Design
@@ -64,16 +72,30 @@
             <a href="#item1" class="accordion-button">Design</a>
           </h2>
           <div class="accordion-content">
-            <img src="./assets/keepdreaming.png" alt="keepdreaming" width="200" height="300">
-            <img src="./assets/A3 Grid With Curved Poster Mockup.png" alt="A3 Grid With Curved Poster Mockup" width="300" height="200">
-            <img src="./assets/orchidcoffeekate.png" alt="orchidcoffeekate" width="200" height="300">
+            <img
+              src="./assets/keepdreaming.png"
+              alt="keepdreaming"
+              width="200"
+              height="300"
+            />
+            <img
+              src="./assets/A3 Grid With Curved Poster Mockup.png"
+              alt="A3 Grid With Curved Poster Mockup"
+              width="300"
+              height="200"
+            />
+            <img
+              src="./assets/orchidcoffeekate.png"
+              alt="orchidcoffeekate"
+              width="200"
+              height="300"
+            />
           </div>
         </div>
         <!-- Accordion Item 2 -->
         <div class="accordion-item" id="item2">
           <h2 class="accordion-header">
             <a href="#item2" class="accordion-button">Education</a>
-            
           </h2>
           <div class="accordion-content">
             <p>Study New Media Production & Design Program at SAIT</p>
@@ -86,37 +108,131 @@
       <!-- Remove and add footer HTML -->
       <div class="footer">
         <h1>Information</h1>
-        
-        <li><a class="button" href="https://www.instagram.com/kateyau.studio/">Instagram</a></li>
-            <li><a class="button" href="mailto:ywckate@gmail.com">Email</a></li>
+
+        <li>
+          <a class="button" href="https://www.instagram.com/kateyau.studio/"
+            >Instagram</a
+          >
+        </li>
+        <li><a class="button" href="mailto:ywckate@gmail.com">Email</a></li>
         <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.956786728379!2d-73.98920748432238!3d40.744119979328496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259e60c5ad767%3A0x1c3bb99243deb742!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1635834910852!5m2!1sen!2sus" 
-                  allowfullscreen="" 
-                  loading="lazy">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.956786728379!2d-73.98920748432238!3d40.744119979328496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259e60c5ad767%3A0x1c3bb99243deb742!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1635834910852!5m2!1sen!2sus"
+            allowfullscreen=""
+            loading="lazy"
+          >
           </iframe>
+        </div>
       </div>
-      </div>
-      
-        <h2>Contact</h2>
-        <form method="post" action="http://localhost:3000/submit-form">
+
+      <h2>Contact</h2>
+      <form method="post" action="http://localhost:3000/submit-form">
         <fieldset>
+          <legend>Personal Information</legend>
 
-            <legend>Personal Information</legend>
+          <label for="fname">First name:</label>
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            required
+            placeholder="e.g Kate"
+          />
+          <label for="lname">Last name:</label>
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            required
+            placeholder="e.g Yau"
+          />
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            title="format: xxx-xxx-xxxx"
+            placeholder="123-456-7890"
+          />
 
-            <label for="fname">First name:</label>
-            <input type="text" name="fname" id="fname" required placeholder="e.g Kate">
-            <label for="lname">Last name:</label>
-            <input type="text" name="lname" id="lname" required placeholder="e.g Yau">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="format: xxx-xxx-xxxx" placeholder="123-456-7890">
-            
-            <label for="email-address">Your email address:</label>
-            <input type="email" name="email-address" id="email-address" required>
-            <input id="submit" type="submit" value="submit">
-      
+          <label for="email-address">Your email address:</label>
+          <input
+            type="email"
+            name="email-address"
+            id="email-address"
+            required
+          />
+          <input id="submit" type="submit" value="submit" />
+        </fieldset>
+      </form>
+
+      <script>
+        const form = document.getElementById("contact-form");
+        const fnameInput = document.getElementById("fname");
+        const lnameInput = document.getElementById("lname");
+        const phoneInput = document.getElementById("phone");
+        const emailInput = document.getElementById("email-address");
+
+        form.addEventListener("submit", function (event) {
+          if (!validateForm()) {
+            event.preventDefault();
+          }
+        });
+
+        function validateForm() {
+          let isValid = true;
+
+          if (fnameInput.value.trim() === "") {
+            showError("fname-error", "First name is required");
+            isValid = false;
+          } else {
+            hideError("fname-error");
+          }
+
+          if (lnameInput.value.trim() === "") {
+            showError("lname-error", "Last name is required");
+            isValid = false;
+          } else {
+            hideError("lname-error");
+          }
+
+          const phonePattern = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
+          if (!phonePattern.test(phoneInput.value.trim())) {
+            showError("phone-error", "Invalid phone number format");
+            isValid = false;
+          } else {
+            hideError("phone-error");
+          }
+
+          if (emailInput.value.trim() === "") {
+            showError("email-error", "Email address is required");
+            isValid = false;
+          } else {
+            hideError("email-error");
+          }
+
+          return isValid;
+        }
+
+        function showError(id, message) {
+          const errorElement = document.getElementById(id);
+          errorElement.textContent = message;
+          errorElement.style.display = "block";
+        }
+
+        function hideError(id) {
+          const errorElement = document.getElementById(id);
+          errorElement.textContent = "";
+          errorElement.style.display = "none";
+        }
+      </script>
     </section>
     <footer>
-      <small>&copy;<span id="currentYear"></span> Copyright All About Kate Yau.</small>
+      <small
+        >&copy;<span id="currentYear"></span> Copyright All About Kate
+        Yau.</small
+      >
     </footer>
   </body>
 </html>
