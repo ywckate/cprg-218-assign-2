@@ -15,7 +15,9 @@ app.post("/submit-form", (req, res) => {
   // Send a response back to the client
   res.send("Form submitted successfully!");
 });
-
+app.get("/success", (req, res) => {
+  res.sendFile(__dirname + "/success.html");
+});
 // Serve static files (like the HTML file)
 app.use(express.static("public"));
 
